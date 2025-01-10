@@ -7,8 +7,8 @@
 	<Import Project="$(BuildToolsDirectory)Directory.Packages.targets" />
 
 	<PropertyGroup>
-		<PackageId>WebView.Avalonia.Linux</PackageId>
-		<Title>WebView.Avalonia.Linux</Title>
+		<PackageId>WebView.Avalonia.Linux.Cross</PackageId>
+		<Title>WebView.Avalonia.Linux.Cross</Title>
 		<!--<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>-->
 		<TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);CopyTargetsForTfmSpecificContentInPackage</TargetsForTfmSpecificContentInPackage>
 	</PropertyGroup>

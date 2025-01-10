@@ -64,7 +64,7 @@ public class WKUserContentController : NSObject
     }
 
     [EditorBrowsable(EditorBrowsableState.Advanced)]
-    protected internal WKUserContentController(IntPtr handle)
+    protected internal WKUserContentController(NativeHandle handle)
         : base(handle)
     {
     }

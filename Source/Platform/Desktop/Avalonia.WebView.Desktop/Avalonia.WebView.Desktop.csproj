@@ -3,12 +3,11 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0</TargetFrameworks>
 	</PropertyGroup>
-
 	<Import Project="$(BuildToolsDirectory)Directory.Packages.targets" />
 
 	<PropertyGroup>
-		<PackageId>WebView.Avalonia.Desktop</PackageId>
-		<Title>WebView.Avalonia.Desktop</Title> 
+		<PackageId>WebView.Avalonia.Desktop.Cross</PackageId>
+		<Title>WebView.Avalonia.Desktop.Cross</Title> 
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -35,8 +34,8 @@
 		<ProjectReference Include="..\..\Windows\Avalonia.WebView.Windows\Avalonia.WebView.Windows.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<!--<ItemGroup>
 		<None Include="$(BuildToolsDirectory)Directory.webview.desktop.common.targets" Pack="True" PackagePath="build\$(PackageId)%(Extension)" />
-	</ItemGroup>
+	</ItemGroup>-->
 
 </Project>

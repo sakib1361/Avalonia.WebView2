@@ -30,12 +30,7 @@ public class NavHelper
             {
                 nav.Children = nav.Children.Where(c => c.Hide is false).ToArray();
 
-                nav.Children.ForEach(child =>
-                {
-                    child.ParentId = nav.Id;
-                    child.FullTitle = $"{nav.Title} {child.Title}";
-                    child.ParentIcon = nav.Icon;
-                });
+               
             }
         });
 
@@ -45,16 +40,7 @@ public class NavHelper
             if (nav.Children is not null) SameLevelNavs.AddRange(nav.Children);
         });
 
-        SameLevelNavs.Where(nav => nav.Href is not null).ForEach(nav =>
-        {
-            // The following path will not open a new tab
-            if (nav.Href is "app/user/view" or "app/user/edit" or "app/ecommerce/details")
-            {
-                nav.Target = "Self";
-            }
-
-            PageTabItems.Add(new(nav.Title!, nav.Href!, nav.ParentIcon));
-        });
+        
     }
 
     public void NavigateTo(NavModel nav)

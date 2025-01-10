@@ -1,5 +1,5 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk.Razor"/>
+	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk"/>
 
 	<PropertyGroup>
 		<StaticWebAssetBasePath>/</StaticWebAssetBasePath>

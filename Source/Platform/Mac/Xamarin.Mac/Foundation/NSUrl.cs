@@ -292,7 +292,7 @@ public class NSUrl : NSObject
     }
 
     [EditorBrowsable(EditorBrowsableState.Advanced)]
-    public NSUrl(IntPtr handle)
+    public NSUrl(NativeHandle handle)
         : base(handle)
     {
     }

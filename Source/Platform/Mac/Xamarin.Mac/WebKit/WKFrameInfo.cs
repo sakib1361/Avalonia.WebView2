@@ -42,7 +42,7 @@ public class WKFrameInfo : NSObject
     }
 
     [EditorBrowsable(EditorBrowsableState.Advanced)]
-    protected internal WKFrameInfo(IntPtr handle)
+    protected internal WKFrameInfo(NativeHandle handle)
         : base(handle)
     {
     }

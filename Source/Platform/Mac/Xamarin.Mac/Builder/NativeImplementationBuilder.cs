@@ -16,7 +16,6 @@ internal abstract class NativeImplementationBuilder
         __convertstring = typeof(NSString).GetMethod("ToString", Type.EmptyTypes);
         __getobject = typeof(Runtime).GetMethod("GetNSObject", BindingFlags.Static | BindingFlags.Public);
         __gethandle = typeof(NSObject).GetMethod("get_Handle", BindingFlags.Instance | BindingFlags.Public);
-        __getFunctionPointerForDelegate = typeof(Marshal).GetMethod("GetFunctionPointerForDelegateInternal", BindingFlags.Static | BindingFlags.NonPublic);
         __intptrzero = typeof(IntPtr).GetField("Zero", BindingFlags.Static | BindingFlags.Public);
         s_Builder = AssemblyBuilder.DefineDynamicAssembly(new AssemblyName(Guid.NewGuid().ToString()), AssemblyBuilderAccess.Run);
         s_Module = s_Builder.DefineDynamicModule("Implementations");
@@ -30,7 +29,6 @@ internal abstract class NativeImplementationBuilder
     private static MethodInfo __convertstring;
     private static MethodInfo __getobject;
     private static MethodInfo __gethandle;
-    private static MethodInfo __getFunctionPointerForDelegate;
     private static FieldInfo __intptrzero;
 
     private Delegate _delegate;

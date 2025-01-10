@@ -1,11 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0</TargetFrameworks>
+		<TargetFrameworks>net9.0</TargetFrameworks>
 		<OutputPath>$(RepositoryDirectory)_blazorwebview\</OutputPath>
 	</PropertyGroup>
 
 	<Import Project="$(BuildToolsDirectory)Directory.Packages.targets" />
+	<PropertyGroup>
+		<PackageId>BlazorWebView.Avalonia.Cross</PackageId>
+		<Title>BlazorWebView.Avalonia.Cross</Title>
+	</PropertyGroup>
 
 	<PropertyGroup>
 		<!--<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>-->
@@ -84,8 +88,8 @@
 		</ProjectReference>
 	</ItemGroup>
 
-	<ItemGroup>
+	<!--<ItemGroup>
 		<None Include="$(BuildToolsDirectory)Directory.webview.blazor.common.targets" Pack="True" PackagePath="build\$(MSBuildProjectName)%(Extension)" />
-	</ItemGroup>
+	</ItemGroup>-->
 
 </Project>

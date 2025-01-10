@@ -30,7 +30,7 @@ public class WKNavigation : NSObject
     }
 
     [EditorBrowsable(EditorBrowsableState.Advanced)]
-    protected internal WKNavigation(IntPtr handle)
+    protected internal WKNavigation(NativeHandle handle)
         : base(handle)
     {
     }

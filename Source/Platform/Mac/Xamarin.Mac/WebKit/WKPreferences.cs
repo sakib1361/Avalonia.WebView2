@@ -83,7 +83,7 @@ public class WKPreferences : NSObject
     }
 
     [EditorBrowsable(EditorBrowsableState.Advanced)]
-    protected internal WKPreferences(IntPtr handle)
+    protected internal WKPreferences(NativeHandle handle)
         : base(handle)
     {
     }

@@ -13,13 +13,13 @@ English| [简体中文](./README.zh-CN.md)
 
 1. Add [WebView.Avalonia][nuget] or [BlazorWebView.Avalonia][nuget] nuget package to your avaloniaui shared project:
 
-       dotnet add package WebView.Avalonia
+       dotnet add package WebView.Avalonia.Cross
                     OR
-       dotnet add package BlazorWebView.Avalonia
+       dotnet add package BlazorWebView.Avalonia.Cross
 
 2. Add [WebView.Avalonia.Desktop][nuget] nuget package to your avaloniaui desktop project:
 
-       dotnet add package WebView.Avalonia.Desktop
+       dotnet add package WebView.Avalonia.Desktop.Cross
 
 3. Add [WebView.Avalonia.Android][nuget] nuget package to your avaloniaui Android project:
 

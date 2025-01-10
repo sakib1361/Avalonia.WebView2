@@ -138,12 +138,12 @@ public class NSData : NSObject, IEnumerable, IEnumerable<byte>
     }
 
     [EditorBrowsable(EditorBrowsableState.Advanced)]
-    public NSData(IntPtr handle)
+    public NSData(NativeHandle handle)
         : base(handle)
     {
     }
 
-    internal NSData(IntPtr handle, bool owns)
+    internal NSData(NativeHandle handle, bool owns)
     : base(handle)
     {
         if (!owns)

@@ -318,7 +318,7 @@ public class NSString : NSObject
 	}
 
 	[EditorBrowsable(EditorBrowsableState.Advanced)]
-	public NSString(IntPtr handle)
+	public NSString(NativeHandle handle)
 		: base(handle)
 	{
 	}

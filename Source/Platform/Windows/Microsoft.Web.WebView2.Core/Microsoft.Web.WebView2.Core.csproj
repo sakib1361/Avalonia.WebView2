@@ -9,7 +9,7 @@
 		<PackageReference Include="Microsoft.CSharp">
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
-		<PackageReference Include="System.Numerics.Vectors" >
+		<PackageReference Include="System.Numerics.Vectors">
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 	</ItemGroup>
@@ -24,6 +24,13 @@
 	  <None Update="runtimes\win-x86\native\WebView2Loader.dll">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="PolySharp">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>build; analyzers</IncludeAssets>
+	  </PackageReference>
 	</ItemGroup>
 
 </Project>

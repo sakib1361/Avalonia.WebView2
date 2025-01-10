@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-	  <TargetFramework>net8.0</TargetFramework>
+	  <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +17,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Avalonia.WebView\Avalonia.WebView.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="PolySharp">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>build; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

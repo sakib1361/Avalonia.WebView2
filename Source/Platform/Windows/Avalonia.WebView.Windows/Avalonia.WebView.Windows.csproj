@@ -7,8 +7,8 @@
 	<Import Project="$(BuildToolsDirectory)Directory.Packages.targets" />
 	
 	<PropertyGroup>
-		<PackageId>WebView.Avalonia.Windows</PackageId>
-		<Title>WebView.Avalonia.Windows</Title>
+		<PackageId>WebView.Avalonia.Windows.Cross</PackageId>
+		<Title>WebView.Avalonia.Windows.Cross</Title>
 		<!--<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>-->
 		<TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);CopyTargetsForTfmSpecificContentInPackage</TargetsForTfmSpecificContentInPackage>
 	</PropertyGroup>
@@ -65,7 +65,7 @@
 		<PackageReference Include="Microsoft.Extensions.FileProviders.Physical" />
 		<PackageReference Include="Microsoft.CSharp" />
 		<PackageReference Include="System.Numerics.Vectors" />
-		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces"/>
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -81,6 +81,13 @@
 		<ProjectReference Include="..\Microsoft.Web.WebView2.Core\Microsoft.Web.WebView2.Core.csproj">
 			<PrivateAssets>all</PrivateAssets>
 		</ProjectReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="PolySharp">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>build; analyzers</IncludeAssets>
+	  </PackageReference>
 	</ItemGroup>
 
 </Project>

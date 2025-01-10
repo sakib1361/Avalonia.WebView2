@@ -406,7 +406,7 @@ public class NSMutableUrlRequest : NSUrlRequest
 	}
 
 	[EditorBrowsable(EditorBrowsableState.Advanced)]
-	public NSMutableUrlRequest(IntPtr handle)
+	public NSMutableUrlRequest(NativeHandle handle)
 		: base(handle)
 	{
 	}

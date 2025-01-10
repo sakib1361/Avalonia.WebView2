@@ -40,7 +40,7 @@ public class WKScriptMessage : NSObject
     }
 
     [EditorBrowsable(EditorBrowsableState.Advanced)]
-    protected internal WKScriptMessage(IntPtr handle)
+    protected internal WKScriptMessage(NativeHandle handle)
         : base(handle)
     {
     }

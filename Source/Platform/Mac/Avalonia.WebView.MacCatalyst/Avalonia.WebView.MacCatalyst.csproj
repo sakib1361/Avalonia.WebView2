@@ -7,8 +7,8 @@
 	<Import Project="$(BuildToolsDirectory)Directory.Packages.targets" />
 
 	<PropertyGroup>
-		<PackageId>WebView.Avalonia.MacCatalyst</PackageId>
-		<Title>WebView.Avalonia.MacCatalyst</Title>
+		<PackageId>WebView.Avalonia.MacCatalyst.Cross</PackageId>
+		<Title>WebView.Avalonia.MacCatalyst.Cross</Title>
 		<!--<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>-->
 		<TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);CopyTargetsForTfmSpecificContentInPackage</TargetsForTfmSpecificContentInPackage>
 	</PropertyGroup>

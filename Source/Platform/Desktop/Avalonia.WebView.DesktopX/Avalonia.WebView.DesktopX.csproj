@@ -16,4 +16,11 @@
 		<None Include="$(BuildToolsDirectory)Directory.webview.desktop.common.targets" Pack="True" PackagePath="build\$(MSBuildProjectName)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Update="PolySharp">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>build; analyzers</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+
 </Project>

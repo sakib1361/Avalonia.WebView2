@@ -1,24 +1,24 @@
 ﻿<Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <AvaloniaVersion>11.0.10</AvaloniaVersion>
+    <AvaloniaVersion>11.2.3</AvaloniaVersion>
     <AntDesignVersion>11.0.0</AntDesignVersion>
     <Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>true</Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="GtkSharp" Version="3.24.24.95" />
     <PackageVersion Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageVersion Include="Microsoft.Extensions.FileProviders.Abstractions" Version="8.0.0" />
-    <PackageVersion Include="Microsoft.Extensions.FileProviders.Physical" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.FileProviders.Abstractions" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.FileProviders.Physical" Version="9.0.0" />
     <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.1823.32" />
-    <PackageVersion Include="System.Buffers" Version="4.5.1" />
+    <PackageVersion Include="System.Buffers" Version="4.6.0" />
     <PackageVersion Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
     <PackageVersion Include="System.Text.Encodings.Web" Version="8.0.0" />
     <PackageVersion Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
     <PackageVersion Include="WebkitGtkSharp" Version="3.24.24.95" />
     <PackageVersion Include="XamarinMac" Version="1.0.0" />
     <PackageVersion Include="XamlNameReferenceGenerator" Version="1.5.1" />
-    <PackageVersion Include="Avalonia" Version="$(AvaloniaVersion)" />
+    <PackageVersion Include="Avalonia" Version="11.2.3" />
     <!--<PackageVersion Include="Avalonia.Web" Version="$(AvaloniaVersion)" />-->
     <PackageVersion Include="Avalonia.iOS" Version="$(AvaloniaVersion)" />
     <PackageVersion Include="Avalonia.X11" Version="$(AvaloniaVersion)" />
@@ -38,7 +38,7 @@
     <PackageVersion Include="Avalonia.Controls.ColorPicker" Version="$(AvaloniaVersion)" />
     <PackageVersion Include="Avalonia.Markup.Xaml.Loader" Version="$(AvaloniaVersion)" />
     <PackageVersion Include="Avalonia.Skia" Version="$(AvaloniaVersion)" />
-    <PackageVersion Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
+    <PackageVersion Include="Avalonia.Diagnostics" Version="11.2.3" />
     <PackageVersion Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.7" />
   </ItemGroup>
   <ItemGroup>
@@ -46,13 +46,13 @@
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0" />
-    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.0" />
     <PackageVersion Include="System.Memory" Version="4.5.5" />
     <PackageVersion Include="System.Runtime" Version="4.3.1" />
     <PackageVersion Include="System.Reflection.Emit.ILGeneration" Version="4.3.0" />
     <PackageVersion Include="System.Reflection.Emit" Version="4.7.0" />
     <PackageVersion Include="System.Reflection.Emit.Lightweight" Version="4.7.0" />
-    <PackageVersion Include="System.Numerics.Vectors" Version="4.5.0" />
+    <PackageVersion Include="System.Numerics.Vectors" Version="4.6.0" />
     <PackageVersion Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageVersion Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
   </ItemGroup>
@@ -61,16 +61,13 @@
     <PackageVersion Include="AntDesign.Toolkit" Version="$(AntDesignVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <PackageVersion Include="Masa.Blazor" Version="1.5.3" />
+    <PackageVersion Include="Masa.Blazor" Version="1.8.3" />
   </ItemGroup>
   <ItemGroup>
-    <PackageVersion Include="PolySharp" Version="1.14.1" />
+    <PackageVersion Include="PolySharp" Version="1.15.0" />
     <PackageVersion Include="MonoMac.NetStandard" Version="0.0.4" />
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0' OR '$(TargetFramework)' == 'net8.0-windows'">
-    <PackageVersion Include="Microsoft.AspNetCore.Components.WebView" Version="8.0.6" />
-  </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'net6.0-windows'">
-    <PackageVersion Include="Microsoft.AspNetCore.Components.WebView" Version="6.0.16" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'net9.0' OR '$(TargetFramework)' == 'net9.0-windows'">
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebView" Version="9.0.0" />
   </ItemGroup>
 </Project>
