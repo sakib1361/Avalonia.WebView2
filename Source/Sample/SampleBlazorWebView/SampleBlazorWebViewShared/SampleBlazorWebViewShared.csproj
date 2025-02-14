@@ -2,13 +2,11 @@
 
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>disable</Nullable>
 	</PropertyGroup>
-
-	<Import Project="$(BuildToolsDirectory)Directory.webview.blazor.common.targets" />
 
 	<ItemGroup>
 		<PackageReference Include="Avalonia" />
-		<PackageReference Include="Masa.Blazor" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebView" />
 	</ItemGroup>
 

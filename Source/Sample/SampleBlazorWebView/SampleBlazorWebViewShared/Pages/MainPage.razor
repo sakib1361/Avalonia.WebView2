@@ -1,0 +1,12 @@
+﻿@page "/"
+
+<button @onclick=OnCounterClick>Click Me</button>
+<p>You Clicked @counter times</p>
+
+@code {
+    int counter;
+    private void OnCounterClick()
+    {
+        counter++;
+    }
+}
