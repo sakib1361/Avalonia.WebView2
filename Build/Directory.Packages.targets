@@ -3,9 +3,9 @@
 		<!--Package-->
 		<PackageId Condition="'$(PackageId)' == ''">$(MSBuildProjectName).Cross</PackageId>
 		<Title  Condition="'$(Title)' == ''">$(MSBuildProjectName).Cross</Title>
-		<WebviewVersion>11.2.3.0</WebviewVersion>
+		<WebviewVersion>11.3.1.0</WebviewVersion>
 		<WebViewPackageOutputPath>$(RepositoryDirectory)_nuget\</WebViewPackageOutputPath>
-		<VersionPrefix>avalonia11.2.3</VersionPrefix>
+		<VersionPrefix>avalonia11.3.1</VersionPrefix>
 		<Authors>MicroSugarDeveloperOrg|Sakib</Authors>
 		<Company>MicroSugarDeveloperOrg|Sakib</Company>
 		<Description>This repository is a set of controls that will help you add webview control.</Description>
@@ -13,7 +13,7 @@
 		<RepositoryUrl>https://github.com/sakib1361/Avalonia.WebView2</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/sakib1361/Avalonia.WebView2</PackageProjectUrl>
 		<RepositoryType>git</RepositoryType>
-		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>

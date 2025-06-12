@@ -41,7 +41,7 @@ public sealed partial class BlazorWebView : Control, IVirtualWebView<BlazorWebVi
         }
 
         _setting = setting.Value;
-        _appScheme = _platformBlazorWebViewProvider.Scheme;
+        _appScheme = string.IsNullOrEmpty(setting.Value.Scheme) ? _platformBlazorWebViewProvider.Scheme : setting.Value.Scheme;
         _appHostAddress = setting.Value.AppAddress;
         _baseUri = new Uri($"{_appScheme}://{_appHostAddress}/");
         _startAddress = setting.Value.StartAddress;
